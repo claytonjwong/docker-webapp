@@ -1,0 +1,9 @@
+app:
+  build: ./
+  volumes:
+    - ./:/app
+  ports:
+    - 9000:9000
+  environment:
+    - NODE_ENV=development
+    - PORT=9000
